@@ -1,0 +1,110 @@
+:root {
+
+    --dl-color-gray-black: #000000;
+    --dl-color-gray-white: #FFFFFF;
+    --dl-color-main-light: #ffffffff;
+    --dl-color-main-topic: #37485bff;
+    --dl-color-main-accent: #1664a4ff;
+    --dl-color-main-border: #e4e4e4ff;
+    --dl-color-vivid-primary: #d82f2fff;
+    --dl-color-main-pale-blue: #718ca9ff;
+    --dl-color-main-light-gray: #f3f3f3ff;
+    --dl-color-vivid-highlight: #ffb900ff;
+    --dl-color-vivid-secondary: #5570bfff;
+    --dl-color-main-placeholder: #858585ff;
+    --dl-color-main-accent-orange: #fc7555ff;
+  }
+
+  .list {
+    width: 100%;
+    margin: 1em 0px 1em 0px;
+    display: block;
+    padding: 0px 0px 0px 1.5rem;
+    list-style-type: none;
+    list-style-position: outside;
+  }
+
+  .list-item {
+    display: list-item;
+  }
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transition: 0.2s ease;
+    font-family: "Kanit";
+    font-weight: 300;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+  .input {
+    color: #a6a6a6;
+    cursor: auto;
+    height: 40px;
+    padding: 0.5rem 1rem;
+    border-color: #cbcbcb;
+    border-width: 1px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: var(--dl-color-gray-white);
+  }
+  .textarea {
+    color: var(--dl-color-gray-black);
+    cursor: auto;
+    padding: 0.5rem;
+    font-family: Arial;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: var(--dl-color-gray-white);
+  }
+
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    max-width: 1400px;
+    align-items: center;
+    padding-top: 32px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 32px;
+    justify-content: space-between;
+  }
+
+  .content {
+    font-size: 16px;
+    font-family: Kanit;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+    text-decoration: none;
+  }
+  .kanit300 {
+    font-size: 16px;
+    font-family: Kanit;
+    font-weight: 300;
+    text-transform: none;
+    text-decoration: none;
+  }
+  
+  @media(max-width: 767px) {
+    .navbar {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .menu-item {
+      margin-bottom: var(--dl-space-space-unit);
+    }
+  }
+  @media(max-width: 479px) {
+    .navbar {
+      padding: var(--dl-space-space-unit);
+    }
+    .subtitle {
+      font-size: .8rem;
+    }
+    .title {
+      font-size: 1.8rem;
+    }
+  }
+  

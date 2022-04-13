@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+    
+}
+*:focus {outline:none !important}
+
+:root,:root.light {
+    --ff-primary: 'Kanit', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --fw-extra-light: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #1664A4;
+    --clr-topic: #37485B;
+    --clr-border: #E4E4E4;
+    --clr-placeholder: #858585;
+    --clr-accent-orange: #FC7555;
+    --clr-light-gray: #F3F3F3;
+
+    --bg-gra:
+
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --fs-card: .8rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    
+    --bd-rs: .3em;
+    --bd-rs-form: 1em;
+}
+
+.cardview_container {
+    display: grid;
+    /* max-width: 60%; */
+    column-gap: 2em;
+    row-gap: 2em;
+    grid-template-columns: repeat(4,minmax(auto,1fr));
+}

@@ -1,0 +1,22 @@
+.Filter {
+    width: 200px;
+    height: max-content;
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+  }
+  .Filter-topic {
+    font-weight: 500;
+  }
+  .Filter-list {
+    display: flex;
+    margin-top: 1em;
+    flex-direction: column;
+  }
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,66 @@
+.activity_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    column-gap: 2em;
+}
+
+.view_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.banner {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.table_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    
+}
+
+.viewmode {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.viewmode button {
+    border: 0;
+    background: none;
+    opacity: .3;
+}
+
+.viewmode button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.view_control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fix_container {
+    position: fixed;
+    padding: 1em;
+    bottom: 50%;
+    right: 2em;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    /* box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.15); */
+    /* border: 1px solid #E4E4E4; */
+
+    border-radius: 8px;
+}
