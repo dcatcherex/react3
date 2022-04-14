@@ -146,7 +146,8 @@ li {
 }
 
 
-.menu_icon button {
+.menu_icon i {
+  color: #303030;
   
 }
 

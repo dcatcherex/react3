@@ -1,0 +1,9 @@
+.ECardView_container {
+    margin-top: 2em;
+    display: grid;
+    /* align-items: stretch; */
+    grid-template-columns: repeat(4,minmax(auto,1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+}

@@ -40,21 +40,23 @@ export const Navbar_Ecom = ({
           <div className={style["menu_icon"]}>
             <button>
               {" "}
-              <img
+              {/* <img
                 src="./images/icons/login.png"
                 height={30}
                 width={30}
                 alt=""
-              />
+              /> */}
+              <i class="fa-regular fa-face-smile"></i>
             </button>
             <button>
               {" "}
-              <img
+              {/* <img
                 src="./images/icons/Favorite.png"
                 height={30}
                 width={30}
                 alt=""
-              />
+              /> */}
+              <i class="fa-regular fa-heart"></i>
             </button>
             <button>
               {" "}

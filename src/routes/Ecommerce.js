@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
+import { ECard } from "../components/Cards/ECard";
+import { ECardView } from "../components/Cards/ECardView";
+import styles from "./Ecommerce.module.css";
 
 export const Ecommerce = (props) => {
-    
-    return (
-        <main style={{ padding: "1rem 0" }}>
-          <h2>Ecommerce</h2>
-        </main>
-      );
-}
+  return (
+    <main className={styles.Ecommerce_container}>
+      <ECardView />
+    </main>
+  );
+};

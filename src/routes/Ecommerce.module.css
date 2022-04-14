@@ -1,0 +1,12 @@
+body {
+    background-color: #F2F2F2;
+
+}
+
+.Ecommerce_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    column-gap: 2em;
+}

@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+    
+}
+*:focus {outline:none !important}
+
+:root {
+    --dl-color-bg-white: #FFFFFF;
+    --dl-color-bg-pale-blue: rgba(113, 140, 169, 0.3);
+    --dl-color-bg-pale-blue-hover: rgba(113, 140, 169, 0.5);
+    --dl-color-main-title: #2C2C2C;
+    --dl-color-gray: #858585;
+    --dl-color-main-hightlight-blue: #1664A4;
+    --dl-color-main-hightlight-yellow: #EBC351;
+
+
+
+
+    --half: .5em;
+    --full: 1em;
+    --double: 2em;
+
+    --icon-size: 30px;
+
+    --br:8px;
+}
+
+.ECard_container {
+    max-width: 215px;
+    max-height: 423px;
+    background-color: var(--dl-color-bg-white) ;
+    /* border: 1px solid var(--dl-color-bg-pale-blue); */
+    /* box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.15); */
+    border-radius: var(--br);
+    transition: .3s ease;
+}
+
+.ECard_container:hover {
+    transform: scale(1.05);
+    /* background-color: var(--dl-color-bg-pale-blue-hover); */
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.05);
+
+}
+
+.ECard_header img{
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    border-top-left-radius: var(--br);
+    border-top-right-radius: var(--br);
+}
+
+.ECard_header_img {
+    width: 215px;
+
+}
+
+.ECard_header {
+    background-color: var(--dl-color-bg-pale-blue);
+    border-top-left-radius: var(--br);
+    border-top-right-radius: var(--br);
+}
+
+.ECard_header i {
+    /* color: var(--dl-color-bg-white); */
+    position: absolute;
+    margin-top: 1em;
+    margin-left: -1.5em;
+    /* width: var(--icon-size); */
+}
+
+.ECard_body {
+    padding: var(--half);
+}
+
+.ECard_footer {
+
+}
+
+.product_title {
+    font-weight: 500;
+    color: var(--dl-color-main-title);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.product_category {
+    color: var(--dl-color-gray);
+    font-size: 0.875rem;
+}
+.product_price{
+    text-decoration: line-through;
+    font-size: 0.875rem;
+
+}
+.product_sale_price {
+    color: var(--dl-color-main-hightlight-blue);
+    font-size: 1.125rem;
+}
+
+.product_note {
+    color: var(--dl-color-main-hightlight-blue);
+    font-size: 0.875rem;
+}
+
+.product_star {
+    color: var(--dl-color-main-hightlight-yellow);
+}
