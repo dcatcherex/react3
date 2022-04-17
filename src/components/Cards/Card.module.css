@@ -1,13 +1,6 @@
-* {
-	box-sizing: border-box;
-    
-}
-*:focus {outline:none !important}
-
 .Card {
     width: 100%;
     height: 350px;
-    font-family: 'Kanit';
     display: flex;
     max-width: 250px;
     box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.15);
@@ -22,13 +15,10 @@
     transform: scale(1.1);
   }
   .Card-header {
-    /* flex: 0 0 auto; */
     width: 100%;
     height: 43%;
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
-    /* justify-content: center; */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./ECard.module.css";
+// import product1 from "../../assets/images/products/cloth5.webp";
 
 export const ECard = (props) => {
   const {
@@ -22,7 +23,12 @@ export const ECard = (props) => {
       </div>
       <div className={styles.ECard_body}>
         <div className={styles.ECard_body_categories}>
-          color
+          <span className={styles.color_red}>
+            <i class="fa-solid fa-circle fa-sm"></i>
+          </span>
+          <span className={styles.color_blue}>
+            <i class="fa-solid fa-circle fa-sm"></i>
+          </span>
           <div className={styles.product_category}>{product_category}</div>
         </div>
         <h3 className={styles.product_title}>{product_title}</h3>
@@ -31,13 +37,18 @@ export const ECard = (props) => {
           THB {product_sale_price}
         </div>
         <div className={styles.product_note}>{product_note}</div>
-        <div className={styles.product_star}>
-          {/* {product_star} */}
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+        <div className={styles.bottom_container}>
+          <div className={styles.product_star}>
+            {/* {product_star} */}
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <button>
+            <i class="fa-solid fa-cart-plus fa-xs"></i>
+          </button>
         </div>
       </div>
     </main>
@@ -45,7 +56,7 @@ export const ECard = (props) => {
 };
 
 ECard.defaultProps = {
-  product_img: "../../images/sportswear.webp",
+  product_img: "product1",
   product_title: "WOMAN เสื้อออกกำลังกาย",
   product_category: "woman",
   product_des: "Product description",

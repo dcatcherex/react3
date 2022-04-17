@@ -1,20 +1,19 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
-import Cardview from "../components/cardview";
-import { Filter } from "../components/filter";
-import { Viewbar } from "../components/viewbar";
-import { Table } from "../components/table";
-
-import PropTypes from "prop-types";
+import CardView from "../components/Cards/CardView";
+import { Filter } from "../components/Filters/Filter";
+// import { Viewbar } from "../components/Filters/ViewBar";
+import { Table } from "../components/Tables/Table";
+import banner_img from "../assets/images/banner/banner2.jpg";
 
 import styles from "./Activity.module.css";
 
 export const Activity = () => {
-  const [view, setView] = useState(<Cardview />);
+  const [view, setView] = useState(<CardView />);
   const [filter, setFilter] = useState(<Filter />);
 
   const onCardViewClick = () => {
-    setView(<Cardview />);
+    setView(<CardView />);
   };
   const onListViewClick = () => {
     setView(<Table />);
@@ -22,7 +21,9 @@ export const Activity = () => {
 
   return (
     <div>
-      {/* <img className={styles['banner']} src={banner_img} alt="" width={1920} height={764} /> */}
+      {/* <div className={styles["banner"]}>
+        <img src={banner_img} alt="" width={1920} height={764} />
+      </div> */}
       <main className={styles["activity_container"]}>
         <div className={styles["filter_container"]}>
           {/* <Filter /> */}

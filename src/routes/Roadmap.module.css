@@ -1,0 +1,62 @@
+.Roadmap {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.title_one {
+    font-size: 3.8rem;
+    color: var(--dl-color-main-topic);
+}
+
+.title_two {
+    font-size: 3.8rem;
+    color: var(--dl-color-main-pale-blue);
+}
+
+.Roadmap p{
+    margin: 0;
+    margin-bottom: .4em;
+}
+
+.Roadmap p i{
+    color: var(--dl-color-main-accent);
+    margin-right: .5em;
+}
+
+.tab_set{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5em;
+    column-gap: 1em;
+    
+}
+.Roadmap button{
+    font-family: Kanit;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    padding: 0.1rem 1rem;
+    transition: 0.2s ease;
+    font-weight: 400;
+    /* border: 2px solid var(--dl-color-main-accent); */
+    border: 2px solid var(--dl-color-main-topic);
+    /* color: var(--dl-color-main-accent); */
+    color: var(--dl-color-main-topic);
+}
+
+.Roadmap button:hover {
+    /* background-color: var(--dl-color-main-accent); */
+    /* border-color: var(--dl-color-main-pale-blue); */
+    background-color: var(--dl-color-main-topic);
+    color: var(--dl-color-main-light);
+    font-weight: 300;
+}
+
+.Roadmap button i {
+    margin-right: .4em;
+}
+
+.feature_list {
+    margin-top: 1em;
+}

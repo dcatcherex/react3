@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { Navbar } from "./components/navbar";
-import { Navbar_Ecom } from "./components/Navbar_Ecom";
+import { NavBar } from "./components/Navbar/NavBar";
+import { Navbar_Ecom } from "./components/Navbar/NavBar_Ecom";
 import { Aboutus } from "./routes/Aboutus";
 import { Activity } from "./routes/Activity";
 import { Ecommerce } from "./routes/Ecommerce";
@@ -8,11 +8,13 @@ import { Blog } from "./routes/Blog";
 import { Home } from "./routes/Home";
 import { Page404 } from "./routes/Page404";
 import { Footer } from "./components/Footer/Footer";
+import Roadmap from "./routes/Roadmap";
+import styles from "./App.css";
 
 export default function App() {
   return (
     <div>
-      <Navbar />
+      {/* <NavBar /> */}
       <Navbar_Ecom />
 
       <Routes>
@@ -22,6 +24,7 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/ecommerce" element={<Ecommerce />} />
         <Route path="*" element={<Page404 />} />
+        <Route path="/roadmap" element={<Roadmap />} />
       </Routes>
 
       <Footer />

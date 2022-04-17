@@ -1,5 +1,4 @@
 import React from "react";
-import { ECard } from "../components/Cards/ECard";
 import { ECardView } from "../components/Cards/ECardView";
 import styles from "./Ecommerce.module.css";
 

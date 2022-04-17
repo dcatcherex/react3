@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import style from "./Navbar.module.css";
+import styles from "./NavBar_Ecom.module.css";
 import { NavLink } from "react-router-dom";
 
 // import styles from './login-card.module.css'
@@ -20,58 +20,50 @@ export const Navbar_Ecom = ({
   link6_text,
 }) => {
   return (
-    <div className={style["container_ecom"]}>
-      <header className={style["topbar"]}>
-        <img
-          className={style["logo_min"]}
-          src="./images/logos/logo.png"
-          alt=""
-        />
-
-        <div className={style["right_container"]}>
-          <div className={style["search"]}>
-            <input
-              className={style["searchbox"]}
-              type="text"
-              name="searchbox"
-              id=""
+    <div className={styles["ecom_container"]}>
+      <div className={styles.my_container}>
+        <div className={styles["topbar"]}>
+          <div className={styles.left_container}>
+            <img
+              className={styles["logo_min"]}
+              src="./images/logos/logo.png"
+              alt=""
+              width={250}
             />
           </div>
-          <div className={style["menu_icon"]}>
-            <button>
-              {" "}
-              {/* <img
-                src="./images/icons/login.png"
-                height={30}
-                width={30}
-                alt=""
-              /> */}
-              <i class="fa-regular fa-face-smile"></i>
-            </button>
-            <button>
-              {" "}
-              {/* <img
-                src="./images/icons/Favorite.png"
-                height={30}
-                width={30}
-                alt=""
-              /> */}
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <button>
-              {" "}
-              <img
-                src="./images/icons/cart.svg"
-                height={30}
-                width={30}
-                alt=""
+          <div className={styles["right_container"]}>
+            <div className={styles["search"]}>
+              <input
+                className={styles["searchbox"]}
+                type="text"
+                name="searchbox"
+                id=""
               />
-            </button>
+            </div>
+            <div className={styles["menu_icon"]}>
+              <button>
+                <i class="fa-regular fa-face-smile fa-sm"></i>
+              </button>
+              <button>
+                <i class="fa-regular fa-heart fa-sm"></i>
+              </button>
+              <button>
+                {" "}
+                <img
+                  src="./images/icons/cart.svg"
+                  height={25.2}
+                  width={25.2}
+                  alt=""
+                />
+              </button>
+            </div>
           </div>
         </div>
-      </header>
-      <nav className={style["menu_bar"]}>
-        <ul className={style.menu}>
+      </div>
+      <hr />
+
+      <nav className={styles["menu_bar"]}>
+        <ul className={styles.menu}>
           <li>
             <NavLink to={link1_url} activeClassName="selected">
               {link1_text}
@@ -108,13 +100,13 @@ Navbar_Ecom.defaultProps = {
   link2_url: "/activity",
   link3_url: "/ecommerce",
   link4_url: "/blog",
-  link5_url: "/about us",
+  link5_url: "/roadmap",
   link6_url: "#",
   link1_text: "home",
   link2_text: "activity",
-  link3_text: "ecommerce",
+  link3_text: "market",
   link4_text: "blog",
-  link5_text: "about us",
+  link5_text: "roadmap",
   link6_text: "contact us",
 };
 
