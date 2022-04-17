@@ -1,0 +1,19 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background-color: var(--dl-color-main-light);
+    padding: 2em;
+    margin: 0 auto;
+    border-radius: 8px;
+
+}
+
+.Form button {
+    border: 1px solid var(--dl-color-main-border);
+}
+
+.Form input {
+    border: 1px solid var(--dl-color-main-border);
+    border-radius: 4px;
+}
