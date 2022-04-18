@@ -3,16 +3,17 @@
     height: 350px;
     display: flex;
     max-width: 250px;
-    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     flex-direction: column;
     background-color: white;
 
-    transition: 0.3s ease;
+    transition: 0.2s ease;
   }
 
   .Card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.15);
+
   }
   .Card-header {
     width: 100%;

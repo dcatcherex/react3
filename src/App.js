@@ -10,12 +10,14 @@ import { Page404 } from "./routes/Page404";
 import { Footer } from "./components/Footer/Footer";
 import Roadmap from "./routes/Roadmap";
 import styles from "./App.css";
+import { NavBar2 } from "./components/Navbar/NavBar2";
 
 export default function App() {
   return (
     <div>
       {/* <NavBar /> */}
-      <Navbar_Ecom />
+      {/* <Navbar_Ecom /> */}
+      <NavBar2 />
 
       <Routes>
         <Route path="/" exact element={<Home />} />

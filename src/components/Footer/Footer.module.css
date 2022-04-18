@@ -2,7 +2,18 @@
     background-color: var(--dl-color-main-light);
     display: flex;
     justify-content: center;
+    box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.07);  
+
     padding: 2em 3em;
+}
+
+.Footer2 {
+    border-top: 1px solid var(--dl-color-main-light-gray);
+    background-color: var(--dl-color-main-light);
+    padding: 1em 2em;
+    text-align: center;
+    font-weight: 300;
+
 }
 
 .container {
@@ -12,8 +23,8 @@
     justify-content: space-between;
 
 }
-.logo {
-
+.logo p {
+    color: var(--dl-color-main-pale-blue)
 }
 
 .title {
@@ -27,15 +38,27 @@ width: 50%;
 justify-content: space-between;
 }
 
+.contactContainer .linksList{
+    margin-bottom: .8em;
+}
+
 .linksList {
     display: flex;
     flex-direction: column;
     font-weight: 300;
+    line-height: 1.5;
+
 }
 
 .linksList a{
     color: rgba(0,0,0,.5);
+    /* padding-left: .7em; */
+    /* border-radius: 12px; */
+}
 
+.linksList a:hover{
+    /* background-color: var(--dl-color-bg-pale-blue); */
+    border-bottom: 1px solid var(--dl-color-bg-pale-blue);
 }
 
 .itrackContainer {

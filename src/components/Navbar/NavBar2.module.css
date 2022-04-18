@@ -1,0 +1,69 @@
+
+
+.NavBar2 {
+background-color: white;
+
+}
+
+.topgray {
+    background-color: var(--dl-color-bg-pale-blue);
+    height: 2.5em;
+}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.topbar {
+    width: 100%;
+    padding: 1em ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topmenu {
+    width: 40%;
+    display: flex;
+}
+
+.iconmenu{
+    display: flex;
+    column-gap: 1.5em;
+    
+}
+
+.topmenu input {
+    padding-left: 2.5em;
+}
+
+.searchicon {
+    position:absolute;
+    margin-left: 20em ;
+    margin-top: .5em;
+}
+.menu { 
+    display: flex;
+}
+
+
+.bottombar{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+
+}
+
+.NavBar2 input {
+    margin-right: 2em;
+    width: 100%;
+    border: 1px solid var(--dl-color-main-border);
+    border-radius: 4px;
+}
+
+.iconmenu i {
+    color: var(--dl-color-main-topic)
+
+}
