@@ -2,12 +2,77 @@
     position: fixed;
     padding: 1em;
     bottom: 50%;
-    right: 2em;
-    width: 300px;
+    left: 2em;
+    width: 270px;
     height: 300px;
-    background-color: white;
+    font-weight: 300;
     /* box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.15); */
     /* border: 1px solid #E4E4E4; */
 
     border-radius: 8px;
+}
+
+.fix_container hr {
+    margin-top: 2em;
+    border: .1px solid var(--dl-color-bg-pale-blue);
+}
+
+.fix_title {
+    font-weight: 400;
+    color: var(--dl-color-main-title);
+    margin-top: 2em;
+}
+
+.link {
+    display: flex;
+    flex-direction: column ;
+    row-gap: .5em;
+    margin-top: 1.4em;
+}
+
+.link a{
+    text-decoration: none;
+    color: var(--dl-color-gray50);
+    transition: .2s ease;
+    padding-left: 1rem;
+
+}
+
+.link a:hover {
+    border-left: 2px;
+    /* color: var(--dl-color-vivid-secondary); */
+    background-color: var(--dl-color-main-light);
+    border-radius: 12px;
+    transform: scale(1.05);
+
+}
+
+.link ul {
+    margin: 0;
+    padding-left: 1em;
+    list-style-type: none;
+    line-height: 1.5;
+}
+.link li:hover{
+    text-decoration: underline;
+}
+
+.social_share{
+    margin-top: 1.5em;
+}
+
+.social_share button{
+    margin-right: .2em;
+    width: 1.3em;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.social_share button:hover{
+    background-color: white;
+}
+.social_share i{
+    color: var(--dl-color-gray50);
+
+    
 }

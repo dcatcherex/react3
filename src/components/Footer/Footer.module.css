@@ -1,3 +1,48 @@
-.container {
+.Footer {
     background-color: var(--dl-color-main-light);
+    display: flex;
+    justify-content: center;
+    padding: 2em 3em;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo {
+
+}
+
+.title {
+    font-weight: 500;
+    color: var(--dl-color-main-topic);
+    margin-bottom: .5em;
+}
+.linksContainer {
+display: flex;
+width: 50%;
+justify-content: space-between;
+}
+
+.linksList {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.linksList a{
+    color: rgba(0,0,0,.5);
+
+}
+
+.itrackContainer {
+display: flex;
+flex-direction: column;
+}
+
+.Footer a{
+    text-decoration: none;
 }

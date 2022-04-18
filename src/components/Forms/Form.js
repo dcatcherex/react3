@@ -26,6 +26,10 @@ const Form = (props) => {
         tag: tag,
         date: date,
       },
+      withCredentials: true,
+      url: "http://localhost:5000/api/activities/",
+    }).then((res) => {
+      console.log(res);
     });
   };
 
@@ -86,7 +90,7 @@ const Form = (props) => {
         <input
           type="number"
           name="minute"
-          value={inputs.hour || ""}
+          value={inputs.minute || ""}
           onChange={handleChange}
           placeholder="0"
         />

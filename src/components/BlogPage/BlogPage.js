@@ -8,18 +8,48 @@ export const BlogPage = () => {
   return (
     <div className={styles.fix_container}>
       <hr />
-      <h2>Table of contents</h2>
-      <h3>topic</h3>
-      <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-      </ul>
-      <h4>topic</h4>
-      <hr />
+      <div className={styles.fix_title}>Table of contents</div>
+      <div className={styles.link}>
+        <a href="#">Introduction</a>
+        <a href="#">Installation</a>
+        {/* <ul>
+          <li>
+            <a href="#">ขั้นตอนแรก: setup</a>
+          </li>
+          <li>
+            <a href="#">ขั้นตอนที่สอง: process</a>
+          </li>
+          <li>
+            <a href="#">ขั้นตอนสุดท้าย</a>
+          </li>
+        </ul> */}
+        <a href="#">Syntax</a>
+        <a href="#">Conclusion</a>
+      </div>
 
-      <button onClick={() => setIsShowing((isShowing) => !isShowing)}>
+      {/* <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ul> */}
+      <hr />
+      <div className={styles.social_share}>
+        <button>
+          <i class="fa-solid fa-link fa-2xs"></i>
+        </button>
+        <button>
+          <i class="fa-brands fa-twitter fa-2xs"></i>
+        </button>
+        <button>
+          <i class="fa-brands fa-instagram-square fa-2xs"></i>
+        </button>
+        <button>
+          <i class="fa-brands fa-facebook fa-2xs"></i>
+        </button>
+      </div>
+
+      {/* <button onClick={() => setIsShowing((isShowing) => !isShowing)}>
         Toggle
       </button>
       <Transition
@@ -31,8 +61,8 @@ export const BlogPage = () => {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        I will fade in and out
-      </Transition>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, illum?
+      </Transition> */}
     </div>
   );
 };
