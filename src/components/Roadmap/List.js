@@ -6,7 +6,7 @@ export const List = (props) => {
   const { topic, suggest_count, vote_count } = props;
   return (
     <main className={styles.List}>
-      {topic}
+      <div className={styles.topic}>{topic}</div>
       <div className={styles.stat}>
         <div className={styles.suggests}>
           <button>

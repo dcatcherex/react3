@@ -59,31 +59,11 @@
   .button1:hover, .button2:hover {
     transform: scale(1.05);
   }
-  .button-fullwidth {
-    color: var(--dl-color-main-accent-orange);
-    width: 100%;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    transition: 0.2s ease;
-    border-color: var(--dl-color-main-border);
-    border-width: 1px;
-    border-radius: 4px;
-    margin-bottom: 1em;
-  }
-
-  .button-fullwidth:hover {
-      border-color: var(--dl-color-main-accent-orange);
-  }
-
-  .Login-card a {
-      border: none;
-  }
 
   .Login-card button {
     width: 100%;
     font-size: 1.1rem;
     font-family: 'Kanit';
-    color: #ffffff;
     padding: 0.5rem 1rem;
     text-align: center;
     transition: 0.2s ease;
@@ -95,12 +75,47 @@
   .Login-card button:hover {
       transform: scale(1.05);
   }
+
+  .button-fullwidth {
+    /* color: var(--dl-color-main-accent-orange); */
+    border: 1px solid var(--dl-color-main-border);
+    /* border-color: var(--dl-color-main-border); */
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: 0.2s ease;
+
+    border-radius: 4px;
+    margin-bottom: 1em;
+  }
+
+  .button-fullwidth:hover {
+      border-color: var(--dl-color-main-accent-orange);
+      color: var(--dl-color-main-accent-orange);
+  }
+
+  .Login-card a {
+    text-decoration: none;
+    color:var(--dl-color-main-topic);
+      border: none;
+      transition: .2s ease;
+  }
+
+  .Login-card a:hover {
+    color: var(--dl-color-main-accent-orange);
+    transform: scale(1.05);
+  }
+
+  
   .button-fullwidth-solid {
     background-color: var(--dl-color-main-topic);
+    color: white;
   }
 
   .button-fullwidth-solid-orange {
     background-color: var(--dl-color-main-accent-orange);
+    color: white;
+
   }
 
   .container {
@@ -125,8 +140,7 @@
     font-size: .9em;
     font-family: 'Kanit';
     font-weight: 300;
-    border-color: var(--dl-color-main-border);
-    border-width: 1px;
+    border: 1px solid var(--dl-color-main-border);
     border-radius: .3em;
     margin-bottom: 1em;
     background-color: var(--dl-color-gray-white);

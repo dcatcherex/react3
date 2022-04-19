@@ -2,7 +2,34 @@
 
 .NavBar2 {
 background-color: white;
+box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.07);  
 
+
+}
+
+.logo {
+    display: flex;
+}
+
+.menu li{
+    list-style-type: none;
+    margin-right: 2em;
+}
+
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.938rem;
+    font-weight: 300;
+    /* padding-bottom: 1.2rem; */
+
+}
+
+.menu a:hover,
+.menu a:active,
+.menu a:focus {
+    border-bottom: 3px solid var(--dl-color-main-pale-blue);
+    color: var(--dl-color-main-pale-blue);
 }
 
 .topgray {
@@ -22,6 +49,7 @@ background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .topmenu {
@@ -52,7 +80,7 @@ background-color: white;
 .bottombar{
     display: flex;
     justify-content: center;
-    border-top: 1px solid rgba(0, 0, 0, .2);
+    /* border-top: 1px solid rgba(0, 0, 0, .2); */
 
 }
 

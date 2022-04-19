@@ -3,8 +3,10 @@
     /* flex-direction: column; */
     justify-content: center;
     margin-top: 2em;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
+
+
 
 .title_one {
     font-size: 3.8rem;
@@ -29,8 +31,9 @@
 .tab_set{
     display: flex;
     justify-content: center;
-    margin-top: 3.5em;
+    /* margin-top: 2.5em; */
     column-gap: 1em;
+    margin-bottom: 2em;
     
 }
 .Roadmap button{
@@ -60,4 +63,14 @@
 
 .feature_list {
     margin-top: 1em;
+}
+
+.tab_container {
+    width: 1400px;;
+}
+
+.center {
+display: flex;
+justify-content: center;
+margin-bottom: 3em;
 }

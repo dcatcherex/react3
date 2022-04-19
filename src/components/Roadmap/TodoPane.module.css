@@ -1,0 +1,17 @@
+.allpane {
+    display: flex;
+    column-gap: 1.5em;
+}
+
+.TodoPane {
+    max-width: 400px;
+}
+
+.ListView{
+    row-gap: .5em;
+}
+
+.title {
+    font-size: 27px;
+    margin-bottom: .5em;
+}

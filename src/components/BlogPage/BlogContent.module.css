@@ -1,3 +1,80 @@
+.container {
+    margin-top: 2em;
+
+}
+
 .BlogContent {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2em 3em;
+
+}
+
+.title {
+    font-size: 3.5rem;
+    color: var(--dl-color-main-topic);
+    text-align: right;
+}
+
+.author {
+    margin-top: 1em;
+    margin-bottom: -.5em;
+    font-size: 1.5rem;
+}
+
+.authorsmall {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 1.5em;
+    font-weight: 300;
+}
+
+.right {
+    text-align: right;
+    line-height: 1.5;
+    color: var(--dl-color-main-topic);
+}
+
+.content {
+    font-weight: 300;
+    margin-bottom: 2em;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.7;
+    text-indent: 3em;
+    color: var(--dl-color-text-blue);
+    font-size: 17px;
+}
+
+.content li{
+    text-indent: 0;
+    margin-left: 1.5em;
+}
+
+.image {
+width: 100%;
+border-radius: 8px;
+margin-top: 1.5em ;
+}
+
+.subtopic {
+    font-size: 2rem;
+    color: var(--dl-color-main-topic);
+    margin-bottom: .2em;
+}
+.quate {
+    border-left: 3px solid var(--dl-color-main-accent);
+    font-size: 2em;
+    font-style: italic;
+    padding-left: 1em;
+    color: var(--dl-color-main-topic)
+    /* padding: 1em; */
+    
+}
+
+.quate_container {
+    margin-top: 2em;
+    margin-bottom: 2em;
     
 }

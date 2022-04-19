@@ -26,6 +26,36 @@ export const NavBar2 = (props) => {
         <div className={styles.topbar}>
           <div className={styles.logo}>
             <img src="./images/logos/logo.png" alt="" width={200} />
+
+            <nav className={styles.menu_bar}>
+              <ul className={styles.menu}>
+                <li>
+                  <NavLink to={link1_url} activeClassName="selected">
+                    {link1_text}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={link2_url} activeClassName="selected">
+                    {link2_text}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={link3_url} activeClassName="selected">
+                    {link3_text}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={link4_url} activeClassName="selected">
+                    {link4_text}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={link5_url} activeClassName="selected">
+                    {link5_text}
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
           </div>
           <div className={styles.topmenu}>
             <input type="text" name="search" id="search" />
@@ -54,37 +84,7 @@ export const NavBar2 = (props) => {
 
       {/* <hr /> */}
 
-      <div className={styles.bottombar}>
-        <nav className={styles.menu_bar}>
-          <ul className={styles.menu}>
-            <li>
-              <NavLink to={link1_url} activeClassName="selected">
-                {link1_text}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={link2_url} activeClassName="selected">
-                {link2_text}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={link3_url} activeClassName="selected">
-                {link3_text}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={link4_url} activeClassName="selected">
-                {link4_text}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={link5_url} activeClassName="selected">
-                {link5_text}
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <div className={styles.bottombar}></div>
     </main>
   );
 };

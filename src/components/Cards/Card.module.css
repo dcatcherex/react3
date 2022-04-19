@@ -45,13 +45,17 @@
   .topic {
     color: var(--dl-color-main-topic);
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
+    margin-top: .1em;
+    margin-bottom: .5em;
   }
   .description {
     color: var(--dl-color-main-placeholder);
     font-size: .9rem;
-    margin-top: .2rem;
+    font-weight: 300;
+    line-height: 1.4;
+    /* margin-top: 1em; */
   }
   .Card-footer {
     flex: 0 0 auto;

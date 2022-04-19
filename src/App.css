@@ -1,4 +1,6 @@
 @import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Sarabun:wght@200;300&display=swap');
+
 
 :root {
 
@@ -23,6 +25,7 @@
   --dl-color-main-hightlight-yellow: #EBC351;
   --dl-color-correct-green: #95CC01;
   --dl-color-gray50: #667085;
+  --dl-color-text-blue: #667085;
 
   font-family: Kanit;
   font-size: 16px;
